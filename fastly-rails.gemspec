@@ -14,10 +14,10 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "railties", '< 5'
+  s.add_dependency "railties"
   s.add_dependency 'fastly', '~> 1.6'
 
-  s.add_runtime_dependency('mime-types', ['>= 1.16', '< 3'])
+  s.add_runtime_dependency('mime-types', ['>= 1.16', '< 4'])
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "database_cleaner"
